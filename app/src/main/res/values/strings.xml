@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PaytmInsider</string>
+    <string name="no_events_found">No events found</string>
+    <string name="title">Noida Events</string>
+    <string name="must_initialize_with_group_name">EventsFragment must initialized with forGroup(String groupName)</string>
+</resources>

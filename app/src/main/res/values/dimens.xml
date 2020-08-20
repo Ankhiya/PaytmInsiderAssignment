@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="retry_width">60dp</dimen>
+    <dimen name="retry_height">60dp</dimen>
+    <dimen name="error_text_size">15sp</dimen>
+    <dimen name="recycler_view_margin_horizontal">15dp</dimen>
+    <dimen name="recycler_view_padding_bottom">15dp</dimen>
+    <dimen name="no_results_text_size">15sp</dimen>
+    <dimen name="event_card_margin">10dp</dimen>
+    <dimen name="event_card_corner_radius">4dp</dimen>
+    <dimen name="event_card_elevation">4dp</dimen>
+    <dimen name="event_card_image_height">200dp</dimen>
+    <dimen name="error_text_margin_top">10dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="EventCardCategoryTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:alpha">0.8</item>
+        <item name="android:background">@drawable/category_background</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+    </style>
+
+    <style name="EventCardDetails">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="EventCardTitleTextView" parent="EventCardDetails">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EventCardVenueDateTextView" parent="EventCardDetails">
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="EventCardVenueNameTextView" parent="EventCardDetails">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="EventCardPriceTextView" parent="EventCardDetails">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>

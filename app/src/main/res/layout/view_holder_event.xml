@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="price"
+            type="String" />
+
+        <variable
+            name="category"
+            type="String" />
+
+        <variable
+            name="name"
+            type="String" />
+
+        <variable
+            name="venueName"
+            type="String" />
+
+        <variable
+            name="venueDate"
+            type="String" />
+
+        <variable
+            name="priceAvailable"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/event_card_margin"
+        app:cardCornerRadius="@dimen/event_card_corner_radius"
+        app:cardElevation="@dimen/event_card_elevation"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/event_card_image_height">
+
+                <ImageView
+                    android:id="@+id/eventCoverImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    style="@style/EventCardCategoryTextView"
+                    android:layout_gravity="end"
+                    android:text="@{category}" />
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/EventCardTitleTextView"
+                android:text="@{name}" />
+
+            <TextView
+                style="@style/EventCardVenueDateTextView"
+                android:text="@{venueDate}" />
+
+            <TextView
+                style="@style/EventCardVenueNameTextView"
+                android:text="@{venueName}" />
+
+            <TextView
+                style="@style/EventCardVenueNameTextView"
+                android:text="@{price}"
+                android:visibility="@{priceAvailable ? View.VISIBLE : View.GONE}" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
